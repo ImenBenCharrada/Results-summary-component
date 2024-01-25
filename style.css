@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'hanken';
+    src: url(./assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+html, body{
+    box-sizing: border-box;
+    font-family: 'hanken';
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    border-radius: 1rem;
+    box-shadow: rgba(27, 27, 32, 0.466) 0px 7px 29px 0px;
+    display: flex;
+    max-width: 700px;
+}
+
+.blue-container {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 50%;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+.blue-container h5 {
+    color: rgba(255, 255, 255, 0.658);
+    font-size: 1rem;
+}
+
+.blue-container .circle {
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+    border-radius: 7rem;
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.circle .big {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.circle .small {
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 0.9rem;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.blue-container h4 {
+    margin: 1rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.603);
+}
+
+.white-container {
+    width: 50%;
+    padding: 1.5rem;
+}
+
+.white-container h3 {
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.areas {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+}
+
+.reaction, .memory, .verbal, .visual {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 1rem 0.7rem;
+}
+
+.areas h6 {
+    flex: 1;
+    padding-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.reaction {
+    background-color: rgba(250, 131, 131, 0.301);
+    border-radius: 1rem;
+}
+
+.reaction h6 {
+    color: rgb(243, 23, 23);
+}
+
+.memory {
+    background-color: rgba(253, 249, 0, 0.301);
+    border-radius: 1rem;
+}
+
+.memory h6 {
+    color: rgb(255, 188, 5);
+}
+
+.verbal {
+    background-color: rgba(134, 241, 113, 0.301);
+    border-radius: 1rem;
+}
+
+.verbal h6 {
+    color: rgb(15, 207, 149);
+}
+
+.visual {
+    background-color: rgba(149, 143, 243, 0.301);
+    border-radius: 1rem;
+}
+
+.visual h6 {
+    color: rgb(9, 52, 192);
+}
+
+button {
+    margin: auto;
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgba(48, 42, 129, 0.815);
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    font-size: 1.2rem;
+    padding: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .main {
+        display: block;
+    }
+    .container {
+        width: 90vw;
+        flex-direction: column;
+        width: auto;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .blue-container {
+        width: 100%;
+        border-radius: 0 0 1rem 1rem;
+    }
+
+    .white-container {
+        width: 100%;
+    }
+}
